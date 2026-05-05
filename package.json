@@ -1,0 +1,23 @@
+{
+  "name": "opsmind",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "app/frontend",
+    "app/services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=app/frontend",
+    "dev:api-gateway": "npm run dev --workspace=app/services/api-gateway",
+    "dev:auth": "npm run dev --workspace=app/services/auth-service",
+    "dev:customers": "npm run dev --workspace=app/services/customer-service",
+    "dev:orders": "npm run dev --workspace=app/services/order-service",
+    "dev:inventory": "npm run dev --workspace=app/services/inventory-service",
+    "build": "npm run build --workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
